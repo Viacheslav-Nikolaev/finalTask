@@ -1,0 +1,119 @@
+.service-menu {
+   &__inner {
+      padding-top: 112px;
+      padding-bottom: 24px;
+   }
+
+   &__title {
+      position: relative;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+      padding-left: 16px;
+   }
+
+   &__title::before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 40px;
+      background: #41f6d7;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      margin-left: -16px;
+      top: -8px;
+   }
+
+   &__list-inner {
+      padding-left: 16px;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: flex-start;
+      overflow-x: auto;
+      padding: 32px 0 6px 2px;
+      margin-bottom: 18px;
+   }
+
+   &__list::-webkit-scrollbar {
+      width: 0;
+   }
+
+   &__list-item {
+      cursor: pointer;
+      white-space: nowrap;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+      color: #7e7e82;
+      padding: 8px 16px;
+   }
+
+   @media (any-hover: hover) {
+      &__list-item:hover {
+         position: relative;
+         background: #ffffff;
+         border: 2px solid #b8ffec;
+         border-radius: 6px;
+         top: -2px;
+         left: -2px;
+         margin-bottom: -4px;
+         margin-right: -4px;
+      }
+   }
+
+   &__text {
+      padding: 0 16px;
+      margin-bottom: 16px;
+      line-height: 18px;
+   }
+
+   &__text p {
+      margin-bottom: 16px;
+   }
+
+   &__btn {
+      position: relative;
+      padding-left: 48px;
+      background-color: inherit;
+      letter-spacing: -0.2px;
+      font-size: 16px;
+      font-weight: 500;
+   }
+
+   &__btn::before {
+      content: "";
+      position: absolute;
+      background: url("../img/arrow/arrow-down.svg") no-repeat;
+      top: 5px;
+      left: 25px;
+      width: 8px;
+      height: 11px;
+   }
+
+   &__img {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+   }
+}
+
+@media (min-width: 767px) {
+   .service-menu {
+      &__text {
+         padding-left: 0;
+         margin-right: 48px;
+      }
+
+      &__description {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+         padding: 0 24px;
+      }
+      &__img {
+         width: 46%;
+      }
+   }
+}

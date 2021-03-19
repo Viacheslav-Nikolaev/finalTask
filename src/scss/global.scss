@@ -1,0 +1,32 @@
+.page {
+   min-width: 320px;
+   max-width: 1440px;
+   margin: 0 auto;
+   background: #f8f8f8;
+   font-family: 'TT Lakes';
+   color: #1B1C21;
+   font-size: 14px;
+   letter-spacing: 0.2px;
+}
+
+.item {
+   width: 40px;
+   height: 40px;
+   background: #ff3e79;
+   border-radius: 20px;
+   
+}
+
+@media (any-hover: hover) {
+   .item:hover {
+      transition-duration: 0.6s;
+      transform: scale(1.05);
+      filter: opacity(80%);
+   }
+   
+   .logo:hover {
+      transition-duration: 0.6s;
+      transform: scale(1.05);
+      filter: opacity(80%);
+   }
+}
