@@ -1,0 +1,49 @@
+.repair-types__menu {
+  padding: 16px 0 24px 16px;
+}
+
+.repair-types__item {
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 16px;
+  width: 208px;
+  height: 128px;
+  margin-bottom: 16px;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+@media (any-hover: hover) {
+  .repair-types__item:hover {
+    -webkit-box-shadow: 1px 1px 6px #474747;
+            box-shadow: 1px 1px 6px #474747;
+  }
+}
+
+.repair-types__link {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.repair-types__item-title {
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+}
+
+.repair-types__img-arrow {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}

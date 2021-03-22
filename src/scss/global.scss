@@ -30,3 +30,43 @@
       filter: opacity(80%);
    }
 }
+
+.subheader {
+   background: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
+   padding-left: 16px;
+   min-width: 320px;
+   min-height: 56px;
+   display: flex;
+   align-items: center;
+   border-top: solid 1px #d9fff5;
+}
+
+.subtitle {
+   font-size: 16px;
+   letter-spacing: -0.2px;
+   text-transform: uppercase;
+   color: #7e7e82;
+   font-weight: 500;
+   margin: 16px 0;
+   line-height: 24px;
+}
+
+// Стили Swiper
+.repair-brand__item,
+.repair-types__item,
+.swiper-slide {
+   box-sizing: content-box;
+}
+
+.swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+   background: #DDDDDD;
+}
+
+.swiper-pagination-bullet-active {
+   background: #B5B6BC;
+}
+// ------------------------------------------
+
+

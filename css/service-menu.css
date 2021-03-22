@@ -1,0 +1,124 @@
+.service-menu__inner {
+  padding-top: 112px;
+  padding-bottom: 24px;
+}
+
+.service-menu__title {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  padding-left: 16px;
+}
+
+.service-menu__title::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background: #41f6d7;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-left: -16px;
+  top: -8px;
+}
+
+.service-menu__list-inner {
+  padding-left: 16px;
+}
+
+.service-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow-x: auto;
+  padding: 32px 0 6px 2px;
+  margin-bottom: 18px;
+}
+
+.service-menu__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.service-menu__list-item {
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  padding: 8px 16px;
+}
+
+@media (any-hover: hover) {
+  .service-menu__list-item:hover {
+    position: relative;
+    background: #ffffff;
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+    top: -2px;
+    left: -2px;
+    margin-bottom: -4px;
+    margin-right: -4px;
+  }
+}
+
+.service-menu__text {
+  padding: 0 16px;
+  margin-bottom: 16px;
+  line-height: 18px;
+}
+
+.service-menu__text p {
+  margin-bottom: 16px;
+}
+
+.service-menu__btn {
+  position: relative;
+  padding-left: 48px;
+  background-color: inherit;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.service-menu__btn::before {
+  content: "";
+  position: absolute;
+  background: url("../img/arrow/arrow-down.svg") no-repeat;
+  top: 5px;
+  left: 25px;
+  width: 8px;
+  height: 11px;
+}
+
+.service-menu__img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .service-menu__text {
+    padding-left: 0;
+    margin-right: 48px;
+  }
+  .service-menu__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 24px;
+  }
+  .service-menu__img {
+    width: 46%;
+  }
+}

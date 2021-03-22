@@ -1,0 +1,63 @@
+.repair-types {
+   &__inner {
+   }
+
+   &__header {
+   }
+
+   &__title {
+   }
+
+   &__menu {
+      padding: 16px 0 24px 16px;
+   }
+
+   &__item {
+      cursor: pointer;
+      background: #ffffff;
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+      padding: 16px;
+      width: 208px;
+      height: 128px;
+      margin-bottom: 16px;
+      transition: box-shadow 0.2s;
+   }
+
+   @media (any-hover: hover) {
+      &__item:hover {
+         box-shadow: 1px 1px 6px #474747; 
+      }
+   }
+
+   &__link {
+      height: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+
+   &__item-title {
+      font-size: 16px;
+      letter-spacing: -0.2px;
+      font-weight: 500;
+   }
+
+   &__img-arrow {
+      align-self: flex-end;
+   }
+}
+.subheader {
+}
+.subtitle {
+}
+.slider {
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}

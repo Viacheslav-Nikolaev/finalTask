@@ -1,0 +1,39 @@
+.repair-brand__menu {
+  height: 140px;
+  padding: 16px 0 24px 16px;
+}
+
+.repair-brand__item {
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  height: 40px;
+  width: 208px;
+  height: 72px;
+  padding: 0 16px;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+@media (any-hover: hover) {
+  .repair-brand__item:hover {
+    -webkit-box-shadow: 1px 1px 6px #474747;
+            box-shadow: 1px 1px 6px #474747;
+  }
+}
+
+.repair-brand__link {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
