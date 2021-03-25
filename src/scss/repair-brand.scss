@@ -1,7 +1,19 @@
 .repair-brand {
    &__menu {
-      height: 140px;
+      position: relative;
+      min-height: 140px;
       padding: 16px 0 24px 16px;
+   }
+
+   &__menu::before {
+      content: "";
+      position: absolute;
+      background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      width: 24px;
+      height: 81px;
+      top: 10px;
+      right: 0;
+      z-index: 5;
    }
 
    &__item {
@@ -18,7 +30,7 @@
 
    @media (any-hover: hover) {
       &__item:hover {
-         box-shadow: 1px 1px 6px #474747; 
+         box-shadow: 1px 1px 6px #474747;
       }
    }
 
@@ -28,18 +40,60 @@
       justify-content: space-between;
       align-items: center;
    }
-
 }
 
-.slider {
-}
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
+@media (max-width: 767px) {
+   .repair-brand__btn {
+      display: none;
+   }
 }
 
+@media (min-width: 768px) {
+   .repair-brand {
+      &__menu {
+         padding-bottom: 8px;
+      }
 
+      &__menu::before {
+         display: none;
+      }
 
+      &__menu-wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         height: 170px;
+         overflow: hidden;
+      }
 
+      &__item {
+         width: 192px;
+         margin-right: 24px;
+         margin-bottom: 16px;
+      }
+
+      &__btn {
+         margin-bottom: 24px;
+      }
+   }
+}
+
+@media (min-width: 1440px) {
+   .repair-brand {
+      &__menu {
+         padding: 24px 0 24px 24px;
+      }
+      &__menu-wrapper {
+         height: 170px;
+      }
+
+      &__item {
+         width: 208px;
+         margin-right: 32px;
+         margin-bottom: 16px;
+      }
+
+      &__btn {
+         margin-bottom: 50px;
+      }
+   }
+}

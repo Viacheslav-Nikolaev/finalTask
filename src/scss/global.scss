@@ -13,8 +13,7 @@
    width: 40px;
    height: 40px;
    background: #ff3e79;
-   border-radius: 20px;
-   
+   border-radius: 20px;  
 }
 
 @media (any-hover: hover) {
@@ -41,6 +40,7 @@
    border-top: solid 1px #d9fff5;
 }
 
+
 .subtitle {
    font-size: 16px;
    letter-spacing: -0.2px;
@@ -51,9 +51,29 @@
    line-height: 24px;
 }
 
+.btn {
+   position: relative;
+   padding-left: 48px;
+   background-color: inherit;
+   letter-spacing: -0.2px;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.btn::before {
+   content: "";
+   position: absolute;
+   background: url("../img/arrow/arrow-down.svg") no-repeat;
+   top: 5px;
+   left: 25px;
+   width: 8px;
+   height: 11px;
+}
+
 // Стили Swiper
 .repair-brand__item,
 .repair-types__item,
+.price-menu,
 .swiper-slide {
    box-sizing: content-box;
 }
@@ -70,3 +90,26 @@
 // ------------------------------------------
 
 
+
+@media (min-width: 768px) {
+   .subheader {
+      background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+   }
+
+   .swiper-pagination {
+      display: none;
+   }
+}
+
+@media (min-width: 1440px) {
+
+   .header {
+      display: none;
+   }
+
+   .page {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+   }
+}

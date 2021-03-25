@@ -1,9 +1,8 @@
-export let swiperOne;
-export let swiperTwo;
+export let swiper = null;
 
-export function swiperStartOne(swiperClass) {
-   
-   swiperOne = new Swiper(swiperClass, {
+export function swiperStart() {
+
+   swiper = new Swiper('.slider', {
       slidesPerView: 'auto',
       centeredSlides: false,
       spaceBetween: 16,
@@ -16,50 +15,26 @@ export function swiperStartOne(swiperClass) {
    });
 }
 
-export function swiperDestroy(swiper) {
-   swiper.destroy()
-}
-
-
-
-export function swiperStartTwo(swiperClass) {
-   swiperTwo = new Swiper(swiperClass, {
-      slidesPerView: 'auto',
-      centeredSlides: false,
-      spaceBetween: 16,
-      setWrapperSize: true,
-      pagination: {
-         el: '.swiper-pagination',
-         type: 'bullets',
-         clickable: true,
-      }
-   });
-}
-
-
-export function changesOne(screen) {
+export function changes(screen) {
    if (!screen.matches) {
-      swiperStartOne('.repair-brand__menu');
-   } else if (swiperOne !== undefined) {
-      swiperDestroy(swiperOne);
-   }
-}
-
-export function changesTwo(screen) {
-   if (!screen.matches) {
-      swiperStartTwo('.repair-types__menu');
-   } else if (swiperOne !== undefined) {
-      swiperDestroy(swiperTwo);
+      swiperStart();
+   } else if (swiper !== null) {
+      swiper[0].destroy();
+      swiper[1].destroy();
+      swiper[2].destroy();
    }
 }
 
 
 
 export let screen = window.matchMedia('(min-width: 768px)');
-screen.addListener(changesOne);
-screen.addListener(changesTwo);
-changesOne(screen);
-changesTwo(screen);
+screen.addListener(changes);
+changes(screen);
+
+
+
+
+
 
 
 

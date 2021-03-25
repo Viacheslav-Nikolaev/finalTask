@@ -25,6 +25,7 @@
    }
 
    &__list-inner {
+      position: relative;
       padding-left: 16px;
    }
 
@@ -34,6 +35,16 @@
       overflow-x: auto;
       padding: 32px 0 6px 2px;
       margin-bottom: 18px;
+   }
+
+   &__list-inner::before {
+      content: "";
+      background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      position: absolute;
+      top: 30px;
+      right: 0;
+      width: 24px;
+      height: 40px;
    }
 
    &__list::-webkit-scrollbar {
@@ -73,30 +84,17 @@
       margin-bottom: 16px;
    }
 
-   &__btn {
-      position: relative;
-      padding-left: 48px;
-      background-color: inherit;
-      letter-spacing: -0.2px;
-      font-size: 16px;
-      font-weight: 500;
-   }
-
-   &__btn::before {
-      content: "";
-      position: absolute;
-      background: url("../img/arrow/arrow-down.svg") no-repeat;
-      top: 5px;
-      left: 25px;
-      width: 8px;
-      height: 11px;
-   }
-
    &__img {
       width: 100%;
       display: block;
       margin: 0 auto;
    }
+
+   &__item-inner {
+      display: none;
+   }
+
+   
 }
 
 @media (min-width: 767px) {
@@ -115,5 +113,40 @@
       &__img {
          width: 46%;
       }
+   }
+}
+
+@media (min-width: 1440px) {
+   .service-menu {
+      &__inner {
+         padding-top: 42px;
+      }
+
+      &__item-inner {
+         display: flex;
+         
+      }
+
+      &__title-inner {
+         display: flex;
+         justify-content: space-between;
+         padding-right: 30px;
+      }
+
+      &__item-label {
+        cursor: pointer;
+      }
+
+      &__item-label:first-child {
+         margin-right: 32px;
+      }
+
+      &__item-label span {
+         margin-right: 8px;
+         font-size: 16px;
+         letter-spacing: -0.2px;
+         font-weight: 500;
+      }
+
    }
 }

@@ -1,0 +1,80 @@
+@media (max-width: 1439px) {
+   .sidebar-page {
+      display: none;
+   }
+}
+
+
+.sidebar-page {
+   background: #fff;
+   min-width: 320px;
+   max-width: 320px;
+   padding: 0 30px 0 20px;
+}
+.sidebar-header {
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 37px;
+		&__logo {
+		}
+
+		&__item-img {
+		}
+
+		&__item {
+		}
+}
+.logo {
+}
+.item {
+}
+.sidebar-main {
+}
+.sidebar-menu {
+
+		&__list {
+		}
+
+		&__list-item {
+		}
+
+		&__list-btn {
+         background: inherit;
+		}
+}
+.sidebar-footer {
+
+		&__item-inner {
+		}
+
+		&__item {
+		}
+
+		&__mail {
+		}
+
+		&__mail-link {
+		}
+
+		&__phone {
+		}
+
+		&__phone-link {
+		}
+
+		&__menu-language {
+		}
+
+		&__list {
+		}
+
+		&__link {
+		}
+}
+.idebar-footer {
+
+		&__item-img {
+		}
+}
