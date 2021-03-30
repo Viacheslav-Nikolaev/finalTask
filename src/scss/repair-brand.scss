@@ -2,7 +2,7 @@
    &__menu {
       position: relative;
       min-height: 140px;
-      padding: 16px 0 24px 16px;
+      padding: 24px 0 24px 16px;
    }
 
    &__menu::before {
@@ -23,7 +23,7 @@
       border-radius: 6px;
       height: 40px;
       width: 208px;
-      height: 72px;
+      height: 70px;
       padding: 0 16px;
       transition: box-shadow 0.2s;
    }
@@ -31,6 +31,7 @@
    @media (any-hover: hover) {
       &__item:hover {
          box-shadow: 1px 1px 6px #474747;
+         
       }
    }
 
@@ -50,25 +51,30 @@
 
 @media (min-width: 768px) {
    .repair-brand {
+      
+
       &__menu {
-         padding-bottom: 8px;
+         padding: 0;
+         
       }
 
       &__menu::before {
          display: none;
+        
       }
 
       &__menu-wrapper {
          display: flex;
          flex-wrap: wrap;
-         height: 170px;
+         height: 190px;
          overflow: hidden;
+         margin-top: 8px;
+        
       }
 
       &__item {
-         width: 192px;
-         margin-right: 24px;
-         margin-bottom: 16px;
+         width: 190px;
+         margin: 16px 12px 0 12px;
       }
 
       &__btn {
@@ -80,20 +86,21 @@
 @media (min-width: 1440px) {
    .repair-brand {
       &__menu {
-         padding: 24px 0 24px 24px;
+         padding: 0;
+         padding-left: 16px;
       }
       &__menu-wrapper {
-         height: 170px;
+         height: 190px;
       }
 
       &__item {
-         width: 208px;
-         margin-right: 32px;
-         margin-bottom: 16px;
+         width: 206px;
+         margin: 16px 16px 0 16px;
       }
 
       &__btn {
          margin-bottom: 50px;
+         margin-left: 12px;
       }
    }
 }

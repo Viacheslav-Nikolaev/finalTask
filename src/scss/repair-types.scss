@@ -58,29 +58,31 @@
 @media (min-width: 768px) {
    .repair-types {
       &__menu {
-         padding-bottom: 8px;
+         padding: 0;
       }
 
       &__menu::before {
          display: none;
+         
       }
 
       &__menu-wrapper {
          display: flex;
          flex-wrap: wrap;
-         height: 170px;
+         height: 190px;
          overflow: hidden;
+         padding-top: 12px;
+         
       }
 
       &__item {
          width: 192px;
-         margin-right: 24px;
-         margin-bottom: 16px;
+         margin: 12px;
       }
 
       &__btn {
          display: block;
-         margin-bottom: 24px;
+         margin-bottom: 32px;
       }
    }
 }
@@ -88,20 +90,22 @@
 @media (min-width: 1440px) {
    .repair-types {
       &__menu {
-         padding: 24px 0 24px 24px;
+         
       }
       &__menu-wrapper {
-         height: 170px;
+         height: 190px;
+         padding-left: 16px;
+         
       }
 
       &__item {
          width: 208px;
-         margin-right: 32px;
-         margin-bottom: 16px;
+         margin: 16px;
       }
 
       &__btn {
          margin-bottom: 50px;
+         margin-left: 12px;
       }
    }
 }

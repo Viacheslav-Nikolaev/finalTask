@@ -59,6 +59,7 @@
       letter-spacing: -0.2px;
       color: #7e7e82;
       padding: 8px 16px;
+      margin-right: 20px;
    }
 
    @media (any-hover: hover) {
@@ -70,13 +71,18 @@
          top: -2px;
          left: -2px;
          margin-bottom: -4px;
-         margin-right: -4px;
+         margin-right: 16px;
       }
+   }
+
+   &__text-inner {
+      overflow: hidden;
+      height: 50px;
+      margin-bottom: 16px;
    }
 
    &__text {
       padding: 0 16px;
-      margin-bottom: 16px;
       line-height: 18px;
    }
 
@@ -94,7 +100,10 @@
       display: none;
    }
 
-   
+   &__btn {
+      margin-bottom: 16px;
+   }
+
 }
 
 @media (min-width: 767px) {
@@ -120,6 +129,13 @@
    .service-menu {
       &__inner {
          padding-top: 42px;
+      }
+
+      &__list {
+         overflow-x: none;
+         display: flex;
+         flex-wrap: wrap;
+         line-height: 24px;
       }
 
       &__item-inner {

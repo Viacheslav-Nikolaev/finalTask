@@ -22,8 +22,6 @@
       background: #ffffff;
       border-radius: 6px;
       padding: 16px;
-      // display: flex;
-      // align-items: flex-start;
    }
 
    &__list-item:not(:last-of-type) {
@@ -90,6 +88,13 @@
       font-weight: 500;
       margin-bottom: 40px;
    }
+   @media(any-hover: hover) {
+      &__description-btn:hover {
+         transition-duration: 0.5s;
+         opacity: 0.6;
+      }
+   }
+   
 
    &__description-img {
       margin-left: 7px;
@@ -102,6 +107,10 @@
    .price__item--media-768px {
       display: none;
    }
+
+   .price__item-underline {
+      display: none;
+   }
 }
 
 @media (min-width: 768px) {
@@ -111,13 +120,13 @@
          padding: 0;
          margin-bottom: 24px;
       }
+
       &__menu::before {
          display: none;
       }
 
       &__menu-wrapper {
-         display: flex;
-         flex-direction: column;
+         display: block;
       }
 
       &__item {
@@ -126,6 +135,16 @@
          min-height: 64px;
          margin: 0 auto;
          border-radius: 0;
+         margin-bottom: -1px;
+      }
+
+      &__item-underline {
+         position: relative;
+         z-index: 10;
+         width: 90%;
+         height: 1px;
+         background: #EAEAEA;
+         margin: 0 auto;
       }
 
       &__item:nth-child(2) {
@@ -143,16 +162,19 @@
          mix-blend-mode: normal;
          opacity: 0.72;
          background: inherit;
+         min-height: 10px;
+         padding-top: 30px;
+         padding-bottom: 16px;
       }
 
       &__list {
          display: flex;
          justify-content: space-between;
-        
+         align-items: center;
       }
 
-      &__list-item {
-         
+      &__list-item:not(:last-of-type) {
+         margin-bottom: 0;
       }
 
       &__list-item--opacity-0 {
@@ -175,21 +197,15 @@
          display: none;
       }
 
-      &__list-text {
-         
-         
-      }
 
       &__list-btn {
          position: static;
       }
 
-      &__btn-img {
-      }
-
       &__description {
          padding-left: 40px;
       }
+
       &__description-text {
          max-width: 421px;
       }
