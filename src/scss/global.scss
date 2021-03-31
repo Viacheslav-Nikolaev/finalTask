@@ -55,6 +55,7 @@ body {
    line-height: 24px;
 }
 
+// Работа кнопок "показать все" и "читать далее"
 .btn {
    position: relative;
    padding-left: 48px;
@@ -62,6 +63,22 @@ body {
    letter-spacing: -0.2px;
    font-size: 16px;
    font-weight: 500;
+   &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 25px;
+      width: 8px;
+      height: 11px;
+   }
+
+   &__open::before {
+      background: url("../img/arrow/arrow-down.svg") no-repeat;
+   }
+
+   &__close::before {
+      background: url("../img/arrow/arrow-up.svg") no-repeat;
+   }
 }
 
 @media (any-hover: hover) {
@@ -71,16 +88,18 @@ body {
    }
 }
 
-
-.btn::before {
-   content: "";
-   position: absolute;
-   background: url("../img/arrow/arrow-down.svg") no-repeat;
-   top: 5px;
-   left: 25px;
-   width: 8px;
-   height: 11px;
+.inner-open { 
+   transition-property: all;
+   transition-duration: 1.5s;
+   height: inherit;
 }
+
+.inner-close {
+   transition-property: all;
+   transition-duration: 0.7s;
+   transition-delay: -0.3s;
+}
+
 
 // Стили Swiper
 .repair-brand__item,

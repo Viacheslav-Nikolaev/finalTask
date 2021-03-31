@@ -77,8 +77,20 @@
 
    &__text-inner {
       overflow: hidden;
-      height: 50px;
+      max-height: 50px;
       margin-bottom: 16px;
+   }
+
+   &__text-inner--open {
+      transition-property: all;
+      transition-duration: 1.5s;
+      max-height: 1000vh;
+   }
+
+   &__text-inner--close {
+      transition-property: all;
+      transition-duration: 0.7s;
+      transition-delay: -0.3s;
    }
 
    &__text {
@@ -103,7 +115,6 @@
    &__btn {
       margin-bottom: 16px;
    }
-
 }
 
 @media (min-width: 767px) {
@@ -140,7 +151,6 @@
 
       &__item-inner {
          display: flex;
-         
       }
 
       &__title-inner {
@@ -150,7 +160,7 @@
       }
 
       &__item-label {
-        cursor: pointer;
+         cursor: pointer;
       }
 
       &__item-label:first-child {
@@ -163,6 +173,5 @@
          letter-spacing: -0.2px;
          font-weight: 500;
       }
-
    }
 }
