@@ -69,10 +69,21 @@
       &__menu-wrapper {
          display: flex;
          flex-wrap: wrap;
-         height: 190px;
+         max-height: 190px;
          overflow: hidden;
-         padding-top: 12px;
-         
+         padding-top: 12px;  
+      }
+
+      &__menu-wrapper--open {
+         transition-property: all;
+         transition-duration: 1.5s;
+         max-height: 100vh;
+      }
+   
+      &__menu-wrapper--close {
+         transition-property: all;
+         transition-duration: 0.7s;
+         transition-delay: -0.3s;
       }
 
       &__item {
@@ -93,9 +104,7 @@
          
       }
       &__menu-wrapper {
-         height: 190px;
-         padding-left: 16px;
-         
+         padding-left: 16px;  
       }
 
       &__item {

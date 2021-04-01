@@ -66,15 +66,27 @@
       &__menu-wrapper {
          display: flex;
          flex-wrap: wrap;
-         height: 190px;
+         max-height: 180px;
          overflow: hidden;
-         margin-top: 8px;
-        
+         margin-top: 16px;
+         margin-bottom: 20px;
+      }
+
+      &__menu-wrapper--open {
+         transition-property: all;
+         transition-duration: 1.5s;
+         max-height: 100vh;
+      }
+   
+      &__menu-wrapper--close {
+         transition-property: all;
+         transition-duration: 0.7s;
+         transition-delay: -0.3s;
       }
 
       &__item {
          width: 190px;
-         margin: 16px 12px 0 12px;
+         margin: 8px 12px 8px 12px;
       }
 
       &__btn {
@@ -89,13 +101,11 @@
          padding: 0;
          padding-left: 16px;
       }
-      &__menu-wrapper {
-         height: 190px;
-      }
+      
 
       &__item {
          width: 206px;
-         margin: 16px 16px 0 16px;
+         margin: 8px 16px 8px 16px;
       }
 
       &__btn {

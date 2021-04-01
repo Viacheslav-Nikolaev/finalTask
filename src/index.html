@@ -17,7 +17,7 @@
         <header class="header">
             <div class="header__inner">
                 <div class="header__items header__items--left">
-                    <button class="item header__item header__menu-burger">
+                    <button class="item header__item menu-burger--open">
                         <img class="item-img" src="img/item/menu-burger.svg" alt="меню бургер">
                     </button>
 
@@ -57,7 +57,11 @@
         <!-- появляется при ширине экрана 1440px или при нажатии на меню-бургер -->
         <aside class="sidebar-page">
             <header class="sidebar-header">
-
+                <!-- Появляеться при ширине экрана менее 1440px -->
+                <button class="item sidebar-header__item menu-burger--close">
+                    <img class="sidebar-header__item-img" src="img/item/close.svg" alt="Закрыть">
+                </button>
+                <!-- ------------------------------------------------------------------------ -->
                 <a class="logo sidebar-header__logo" href="#">
                     <img class="sidebar-header__item-img" src="img/item/logo.svg" alt="Логотип">
                 </a>
@@ -239,7 +243,7 @@
 
                     <nav class="repair-brand__menu slider swiper-container">
                         <!-- Additional required wrapper -->
-                        <div class="repair-brand__menu-wrapper inner inner-close swiper-wrapper">
+                        <div class="repair-brand__menu-wrapper swiper-wrapper">
                             <!-- Slides -->
                             <div class="repair-brand__item swiper-slide">
                                 <a class="repair-brand__link" href="#">

@@ -3,6 +3,7 @@ body {
 }
 
 .page {
+
    min-width: 320px;
    max-width: 1440px;
    margin: 0 auto;
@@ -11,7 +12,10 @@ body {
    color: #1B1C21;
    font-size: 14px;
    letter-spacing: 0.2px;
+
 }
+
+
 
 .item {
    width: 40px;
@@ -88,17 +92,6 @@ body {
    }
 }
 
-.inner-open { 
-   transition-property: all;
-   transition-duration: 1.5s;
-   height: inherit;
-}
-
-.inner-close {
-   transition-property: all;
-   transition-duration: 0.7s;
-   transition-delay: -0.3s;
-}
 
 
 // Стили Swiper
