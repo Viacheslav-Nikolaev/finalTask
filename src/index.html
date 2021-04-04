@@ -12,49 +12,7 @@
 
 <body>
     <div class="page">
-
-        <!-- при ширине 1440px блок header исчезает -->
-        <header class="header">
-            <div class="header__inner">
-                <div class="header__items header__items--left">
-                    <button class="item header__item menu-burger--open">
-                        <img class="item-img" src="img/item/menu-burger.svg" alt="меню бургер">
-                    </button>
-
-                    <div class="header__item header__divider header__media-768px"></div>
-
-                    <a class="logo header__item header__logo" href="#">
-                        <img class="header__logo-img" src="img/item/logo.svg" alt="Логотип">
-                    </a>
-                    <div class="header__item header__divider header__divider--media-320px"></div>
-                </div>
-
-                <div class="header__items header__items--right">
-                    <!-- header__media-768px появляются при ширине экрана от 768px-->
-                    <button class="item header__item header__media-768px">
-                        <img class="item-img" src="img/item/phone.svg" alt="Заказать обратный звонок">
-                    </button>
-                    <button class="item header__item header__media-768px">
-                        <img class="item-img" src="img/item/message.svg" alt="Обратная связь">
-                    </button>
-                    <button class="item header__item header__media-768px">
-                        <img class="item-img" src="img/item/person.svg" alt="person">
-                    </button>
-                    <div class="header__item header__divider header__media-768px"></div>
-                    <!-- ---------------------------------- -->
-
-                    <button class="item header__item">
-                        <img class="item-img" src="img/item/repair-status.svg" alt="статус ремонта">
-                    </button>
-                    <button class="item header__item">
-                        <img class="item-img" src="img/item/submit-application.svg" alt="Оставить заявку">
-                    </button>
-                </div>
-            </div>
-        </header>
-        <!-- ------------------------------------------------------ -->
-
-        <!-- появляется при ширине экрана 1440px или при нажатии на меню-бургер -->
+        <!-- Боковое меню появляется при ширине экрана 1440px или при нажатии на меню-бургер -->
         <aside class="sidebar-page">
             <header class="sidebar-header">
                 <!-- Появляеться при ширине экрана менее 1440px -->
@@ -104,14 +62,14 @@
 
             <footer class="sidebar-footer">
                 <div class="sidebar-footer__item-inner">
-                    <button class="item sidebar-footer__item">
-                        <img class="idebar-footer__item-img" src="img/item/phone.svg" alt="Оставить заявку на ремонт">
+                    <button class="item item__phone sidebar-footer__item" id="item-phone__open-2">
+                        <img class="sidebar-footer__item-img" src="img/item/phone.svg" alt="Оставить заявку на ремонт">
+                    </button>
+                    <button class="item item__message sidebar-footer__item" id="item-message__open-2">
+                        <img class="sidebar-footer__item-img" src="img/item/message.svg" alt="Оставить заявку на ремонт">
                     </button>
                     <button class="item sidebar-footer__item">
-                        <img class="idebar-footer__item-img" src="img/item/message.svg" alt="Оставить заявку на ремонт">
-                    </button>
-                    <button class="item sidebar-footer__item">
-                        <img class="idebar-footer__item-img" src="img/item/person.svg" alt="Оставить заявку на ремонт">
+                        <img class="sidebar-footer__item-img" src="img/item/person.svg" alt="Оставить заявку на ремонт">
                     </button>
                 </div>
 
@@ -138,6 +96,93 @@
         </aside>
         <!-- ------------------------------------------------------ -->
 
+        <!-- Форма обратной связи, появляется при нажатии на иконку с классом item__message -->
+        <div class="shadow"></div>
+        <aside class="message">
+            <button class="item message__item" id="item-message__close">
+                <img class="message__item-img item__message item__message--close" src="img/item/close.svg" alt="Закрыть">
+            </button>
+            <h3 class="message__title">
+                Обратная связь
+            </h3>
+            <form action="#" class="message__form" method="post">
+                <input class="message__form-item" type="text" placeholder="Имя">
+                <input class="message__form-item" type="tel" placeholder="Телефон">
+                <input class="message__form-item" type="email" placeholder="Электронная почта">
+                <textarea class="message__form-item" placeholder="Сообщение"></textarea>
+            </form>
+            <div class="message__text">
+                Нажимая “отправить”, вы даете согласие на <a class="message__text-link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="message__text-link" href="#">политикой конфиденциальности</a>
+            </div>
+            <button class="message__btn">
+                <span>ОТПРАВИТЬ</span>
+                <img class="message__btn-img" src="img/arrow/dropdown.svg" alt=">">
+            </button>
+        </aside>
+
+        <aside class="phone">
+            <button class="item phone__item" id="item-phone__close">
+                <img class="phone__item-img" src="img/item/close.svg" alt="Закрыть">
+            </button>
+            <h3 class="phone__title">
+                Заказать звонок
+            </h3>
+            <form action="#" class="phone__form" method="post"> 
+                <input class="phone__form-item" type="tel" placeholder="Телефон">
+            </form>
+            <div class="phone__text">
+                Нажимая “отправить”, вы даете согласие на <a class="phone__text-link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="phone__text-link" href="#">политикой конфиденциальности</a>
+            </div>
+            <button class="phone__btn">
+                <span>ОТПРАВИТЬ</span>
+                <img class="phone__btn-img" src="img/arrow/dropdown.svg" alt=">">
+            </button>
+        </aside> 
+        <!-- ----------------------------------------------------------- -->
+
+
+        <!-- Липкая шапка сайта, при ширине 1440px блок header исчезает -->
+        <header class="header">
+            <div class="header__inner">
+                <div class="header__items header__items--left">
+                    <button class="item header__item menu-burger--open">
+                        <img class="item-img" src="img/item/menu-burger.svg" alt="меню бургер">
+                    </button>
+
+                    <div class="header__item header__divider header__media-768px"></div>
+
+                    <a class="logo header__item header__logo" href="#">
+                        <img class="header__logo-img" src="img/item/logo.svg" alt="Логотип">
+                    </a>
+                    <div class="header__item header__divider header__divider--media-320px"></div>
+                </div>
+
+                <div class="header__items header__items--right">
+                    <!-- header__media-768px появляются при ширине экрана от 768px-->
+                    <button class="item item__phone header__item header__media-768px" id="item-phone__open-1">
+                        <img class="item-img" src="img/item/phone.svg" alt="Заказать обратный звонок">
+                    </button>
+                    <button class="item item__message header__item header__media-768px" id="item-message__open-1">
+                        <img class="item-img" src="img/item/message.svg" alt="Обратная связь">
+                    </button>
+                    <button class="item header__item header__media-768px">
+                        <img class="item-img" src="img/item/person.svg" alt="person">
+                    </button>
+                    <div class="header__item header__divider header__media-768px"></div>
+                    <!-- ---------------------------------- -->
+
+                    <button class="item header__item">
+                        <img class="item-img" src="img/item/repair-status.svg" alt="статус ремонта">
+                    </button>
+                    <button class="item header__item">
+                        <img class="item-img" src="img/item/submit-application.svg" alt="Оставить заявку">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- ------------------------------------------------------ -->
+
+        <!-- Основной контент -->
         <main class="main">
             <!-- Описание сервесного центра -->
             <section class="service-menu">
@@ -623,6 +668,7 @@
                 </ul>
             </footer>
         </main>
+        <!-- ------------------------------------------ -->
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

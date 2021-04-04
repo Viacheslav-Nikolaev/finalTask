@@ -1,9 +1,9 @@
 body {
    background-color: #F2F2F2;
+   overflow-x: hidden;
 }
 
 .page {
-
    min-width: 320px;
    max-width: 1440px;
    margin: 0 auto;
@@ -12,10 +12,12 @@ body {
    color: #1B1C21;
    font-size: 14px;
    letter-spacing: 0.2px;
-
 }
 
-
+.main--opacity { 
+   position: fixed;
+   pointer-events: none;
+}
 
 .item {
    width: 40px;
@@ -84,6 +86,9 @@ body {
       background: url("../img/arrow/arrow-up.svg") no-repeat;
    }
 }
+
+
+
 
 @media (any-hover: hover) {
    .btn:hover {
