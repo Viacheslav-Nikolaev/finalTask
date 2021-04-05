@@ -6,20 +6,23 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>CPS</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
     <div class="page">
-        <!-- Боковое меню появляется при ширине экрана 1440px или при нажатии на меню-бургер -->
+
+        <!-- Боковое меню, появляется при ширине экрана 1440px или при нажатии на меню-бургер -->
         <aside class="sidebar-page">
             <header class="sidebar-header">
-                <!-- Появляеться при ширине экрана менее 1440px -->
+
+                <!-- Кнопка закрытия бокового меню. Появляеться при ширине экрана менее 1440px -->
                 <button class="item sidebar-header__item menu-burger--close">
                     <img class="sidebar-header__item-img" src="img/item/close.svg" alt="Закрыть">
                 </button>
                 <!-- ------------------------------------------------------------------------ -->
+
                 <a class="logo sidebar-header__logo" href="#">
                     <img class="sidebar-header__item-img" src="img/item/logo.svg" alt="Логотип">
                 </a>
@@ -66,7 +69,8 @@
                         <img class="sidebar-footer__item-img" src="img/item/phone.svg" alt="Оставить заявку на ремонт">
                     </button>
                     <button class="item item__message sidebar-footer__item" id="item-message__open-2">
-                        <img class="sidebar-footer__item-img" src="img/item/message.svg" alt="Оставить заявку на ремонт">
+                        <img class="sidebar-footer__item-img" src="img/item/message.svg"
+                            alt="Оставить заявку на ремонт">
                     </button>
                     <button class="item sidebar-footer__item">
                         <img class="sidebar-footer__item-img" src="img/item/person.svg" alt="Оставить заявку на ремонт">
@@ -97,10 +101,10 @@
         <!-- ------------------------------------------------------ -->
 
         <!-- Форма обратной связи, появляется при нажатии на иконку с классом item__message -->
-        <div class="shadow"></div>
         <aside class="message">
             <button class="item message__item" id="item-message__close">
-                <img class="message__item-img item__message item__message--close" src="img/item/close.svg" alt="Закрыть">
+                <img class="message__item-img item__message item__message--close" src="img/item/close.svg"
+                    alt="Закрыть">
             </button>
             <h3 class="message__title">
                 Обратная связь
@@ -112,14 +116,18 @@
                 <textarea class="message__form-item" placeholder="Сообщение"></textarea>
             </form>
             <div class="message__text">
-                Нажимая “отправить”, вы даете согласие на <a class="message__text-link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="message__text-link" href="#">политикой конфиденциальности</a>
+                Нажимая “отправить”, вы даете согласие на <a class="message__text-link" href="#">обработку персональных
+                    данных</a> и соглашаетесь с нашей <a class="message__text-link" href="#">политикой
+                    конфиденциальности</a>
             </div>
             <button class="message__btn">
                 <span>ОТПРАВИТЬ</span>
                 <img class="message__btn-img" src="img/arrow/dropdown.svg" alt=">">
             </button>
         </aside>
+        <!-- ----------------------------------------------------------- -->
 
+        <!-- Форма обратной связи, появляется при нажатии на иконку с классом item__phone -->
         <aside class="phone">
             <button class="item phone__item" id="item-phone__close">
                 <img class="phone__item-img" src="img/item/close.svg" alt="Закрыть">
@@ -127,19 +135,20 @@
             <h3 class="phone__title">
                 Заказать звонок
             </h3>
-            <form action="#" class="phone__form" method="post"> 
+            <form action="#" class="phone__form" method="post">
                 <input class="phone__form-item" type="tel" placeholder="Телефон">
             </form>
             <div class="phone__text">
-                Нажимая “отправить”, вы даете согласие на <a class="phone__text-link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="phone__text-link" href="#">политикой конфиденциальности</a>
+                Нажимая “отправить”, вы даете согласие на <a class="phone__text-link" href="#">обработку персональных
+                    данных</a> и соглашаетесь с нашей <a class="phone__text-link" href="#">политикой
+                    конфиденциальности</a>
             </div>
             <button class="phone__btn">
                 <span>ОТПРАВИТЬ</span>
                 <img class="phone__btn-img" src="img/arrow/dropdown.svg" alt=">">
             </button>
-        </aside> 
+        </aside>
         <!-- ----------------------------------------------------------- -->
-
 
         <!-- Липкая шапка сайта, при ширине 1440px блок header исчезает -->
         <header class="header">
@@ -248,7 +257,8 @@
                         <div class="service-menu__text">
                             <div class="service-menu__text-inner">
                                 <p>
-                                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
+                                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас
+                                    вы
                                     можете
                                     отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                                 </p>
@@ -260,7 +270,7 @@
                                     и, в свою очередь, советуют нас родным и близким.
                                 </p>
                             </div>
-                            
+
                             <button class="service-menu__btn service-menu__btn--open btn btn__open">
                                 <span>Читать далее</span>
                             </button>
@@ -274,10 +284,7 @@
                 </div>
             </section>
 
-
-
             <!-- Ремонт техники различных брендов. -->
-
             <section class="repair-brand">
                 <div class="repair-brand__inner">
                     <div class="repair-brand__header subheader">
@@ -299,7 +306,28 @@
 
                             <div class="repair-brand__item swiper-slide">
                                 <a class="repair-brand__link" href="#">
-                                    <img class="repair-brand__img-brand" src="img/brands/lenovo.png" alt="lenovo">
+                                    <img class="repair-brand__img-brand" src="img/brands/samsung.png" alt="samsung">
+                                    <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
+                                </a>
+                            </div>
+
+                            <div class="repair-brand__item swiper-slide">
+                                <a class="repair-brand__link" href="#">
+                                    <img class="repair-brand__img-brand" src="img/brands/sony.png" alt="sony">
+                                    <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
+                                </a>
+                            </div>
+
+                            <div class="repair-brand__item swiper-slide">
+                                <a class="repair-brand__link" href="#">
+                                    <img class="repair-brand__img-brand" src="img/brands/ViewSonic.png" alt="ViewSonic">
+                                    <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
+                                </a>
+                            </div>
+
+                            <div class="repair-brand__item swiper-slide">
+                                <a class="repair-brand__link" href="#">
+                                    <img class="repair-brand__img-brand" src="img/brands/apple.png" alt="apple">
                                     <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
                                 </a>
                             </div>
@@ -334,7 +362,7 @@
 
                             <div class="repair-brand__item swiper-slide">
                                 <a class="repair-brand__link" href="#">
-                                    <img class="repair-brand__img-brand" src="img/brands/lenovo.png" alt="lenovo">
+                                    <img class="repair-brand__img-brand" src="img/brands/samsung.png" alt="samsung">
                                     <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
                                 </a>
                             </div>
@@ -345,31 +373,6 @@
                                     <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
                                 </a>
                             </div>
-
-                            <div class="repair-brand__item swiper-slide">
-                                <a class="repair-brand__link" href="#">
-                                    <img class="repair-brand__img-brand" src="img/brands/lenovo.png" alt="lenovo">
-                                    <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
-                                </a>
-                            </div>
-
-                            <div class="repair-brand__item swiper-slide">
-                                <a class="repair-brand__link" href="#">
-                                    <img class="repair-brand__img-brand" src="img/brands/lenovo.png" alt="lenovo">
-                                    <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
-                                </a>
-                            </div>
-
-                            <div class="repair-brand__item swiper-slide">
-                                <a class="repair-brand__link" href="#">
-                                    <img class="repair-brand__img-brand" src="img/brands/lenovo.png" alt="lenovo">
-                                    <img class="repair-brand__img-arrow" src="img/arrow/arrow-brands.svg" alt="arrow">
-                                </a>
-                            </div>
-
-
-
-
 
                         </div>
                         <div class="swiper-pagination"></div>
@@ -461,11 +464,13 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </nav>
-                    <!-- Появляется при разрешении 768px -->
+
+                    <!-- Кнопка показать все. Появляется при разрешении 768px -->
                     <button class="repair-types__btn btn btn__open">
                         <span>Показать все</span>
                     </button>
                     <!-- -------------------------------- -->
+
                 </div>
             </section>
 
@@ -485,7 +490,7 @@
                     <nav class="price__menu slider swiper-container">
                         <div class="price__menu-wrapper swiper-wrapper">
 
-                            <!-- отображается на разрешении экрана выше 768px -->
+                            <!-- Заголовок. Отображается на разрешении экрана выше 768px -->
                             <div class="price__item--media-768px price__item swiper-slide">
                                 <ul class="price__list price__list--media-768px">
                                     <li class="price__list-item price__list-item--media-768px">
@@ -529,9 +534,11 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <!-- Подчеркивание текста, при разрешении больше 768px -->
                             <div class="price__item-underline"></div>
                             <!-- ------------------------------------------------- -->
+
                             <div class="price__item swiper-slide">
                                 <ul class="price__list">
                                     <li class="price__list-item">
@@ -555,9 +562,11 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <!-- Подчеркивание текста, при разрешении больше 768px -->
                             <div class="price__item-underline"></div>
                             <!-- ------------------------------------------------- -->
+
                             <div class="price__item swiper-slide">
                                 <ul class="price__list">
                                     <li class="price__list-item">
@@ -581,9 +590,11 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <!-- Подчеркивание текста, при разрешении больше 768px -->
                             <div class="price__item-underline"></div>
                             <!-- ------------------------------------------------- -->
+
                             <div class="price__item swiper-slide">
                                 <ul class="price__list">
                                     <li class="price__list-item">
@@ -607,9 +618,11 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <!-- Подчеркивание текста, при разрешении больше 768px -->
                             <div class="price__item-underline"></div>
                             <!-- ------------------------------------------------- -->
+                            
                             <div class="price__item swiper-slide">
                                 <ul class="price__list">
                                     <li class="price__list-item">
@@ -623,7 +636,6 @@
                                     <li class="price__list-item">
                                         <h3 class="price__list-title">Срок</h3>
                                         <p class="price__list-text">30-120 мин</p>
-
                                     </li>
                                     <li class="price__list-item">
                                         <button class="price__list-btn">
@@ -635,9 +647,7 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-
                     </nav>
-
 
                     <div class="price__description">
                         <p class="price__description-text">

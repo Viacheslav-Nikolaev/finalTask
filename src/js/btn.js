@@ -34,21 +34,17 @@ export function menuBurger(btnClass, menuClass) {
    let btnOpen = document.querySelector('.' + btnClass + '--open');
    let btnClose = document.querySelector('.' + btnClass + '--close');
 
-   let shadow = document.querySelector('.shadow');
-
    let main = document.querySelector('.main');
    let header = document.querySelector('.header');
    let menu = document.querySelector('.' + menuClass);
 
    btnOpen.addEventListener('click', function () {
-      shadow.classList.add('shadow--open');
       header.classList.add('header--opacity');
       main.classList.add('main--opacity');
       menu.classList.add(menuClass + '--open');
    })
 
    btnClose.addEventListener('click', function () {
-      shadow.classList.remove('shadow--open')
       header.classList.remove('header--opacity');
       main.classList.remove('main--opacity');
       menu.classList.add(menuClass + '--close');
@@ -60,11 +56,11 @@ menuBurger('menu-burger', 'sidebar-page');
 // -------------------------------------------------------------------------------------------------------
 
 
+
+// Кнопки вызова формы
 export function popUpMenu(idOpen, idClose, classMenu,) {
    let BtnOpen = document.querySelector('#' + idOpen);
    let BtnClose = document.querySelector('#' + idClose);
-
-   let shadow = document.querySelector('.shadow');
 
    let sidebarPage = document.querySelector('.sidebar-page');
    let main = document.querySelector('.main');
@@ -72,7 +68,6 @@ export function popUpMenu(idOpen, idClose, classMenu,) {
    let menu = document.querySelector('.' + classMenu);
 
    BtnOpen.addEventListener('click', function () {
-      shadow.classList.add('shadow--open')
       sidebarPage.classList.add('sidebar-page--opacity')
       sidebarPage.classList.add('sidebar-page--close');
       sidebarPage.classList.remove('sidebar-page--open');
@@ -84,7 +79,6 @@ export function popUpMenu(idOpen, idClose, classMenu,) {
 
    BtnClose.addEventListener('click', function () {
       sidebarPage.classList.remove('sidebar-page--opacity');
-      shadow.classList.remove('shadow--open');
       header.classList.remove('header--opacity');
       main.classList.remove('main--opacity');
       menu.classList.add(classMenu + '--close');
@@ -97,6 +91,6 @@ popUpMenu('item-message__open-2', 'item-message__close', 'message')
 
 popUpMenu('item-phone__open-1', 'item-phone__close', 'phone');
 popUpMenu('item-phone__open-2', 'item-phone__close', 'phone');
-
+// -----------------------------------------------------------------------------
 
 

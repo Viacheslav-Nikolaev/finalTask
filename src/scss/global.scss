@@ -1,5 +1,5 @@
 body {
-   background-color: #F2F2F2;
+   background-color: #f2f2f2;
    overflow-x: hidden;
 }
 
@@ -8,22 +8,38 @@ body {
    max-width: 1440px;
    margin: 0 auto;
    background: #f8f8f8;
-   font-family: 'TT Lakes';
-   color: #1B1C21;
+   font-family: "TT Lakes";
+   color: #1b1c21;
    font-size: 14px;
    letter-spacing: 0.2px;
 }
 
-.main--opacity { 
+// заблюривание страницы при появлении бокового меню
+
+.main--opacity {
    position: fixed;
+   opacity: 0.02;
    pointer-events: none;
 }
+
+.header--opacity {
+   position: fixed;
+   opacity: 0.02;
+   pointer-events: none;
+}
+
+.sidebar-page--opacity {
+   position: fixed;
+   opacity: 0.02;
+   pointer-events: none;
+}
+// -------------------------------------
 
 .item {
    width: 40px;
    height: 40px;
    background: #ff3e79;
-   border-radius: 20px;  
+   border-radius: 20px;
 }
 
 @media (any-hover: hover) {
@@ -32,7 +48,7 @@ body {
       transform: scale(1.05);
       filter: opacity(80%);
    }
-   
+
    .logo:hover {
       transition-duration: 0.6s;
       transform: scale(1.05);
@@ -49,7 +65,6 @@ body {
    align-items: center;
    border-top: solid 1px #d9fff5;
 }
-
 
 .subtitle {
    font-size: 16px;
@@ -87,17 +102,13 @@ body {
    }
 }
 
-
-
-
 @media (any-hover: hover) {
    .btn:hover {
       transition-duration: 0.5s;
       opacity: 0.6;
    }
 }
-
-
+// -----------------------------------------------------------------------
 
 // Стили Swiper
 .repair-brand__item,
@@ -110,19 +121,17 @@ body {
 .swiper-pagination-bullet {
    width: 12px;
    height: 12px;
-   background: #DDDDDD;
+   background: #dddddd;
 }
 
 .swiper-pagination-bullet-active {
-   background: #B5B6BC;
+   background: #b5b6bc;
 }
 // ------------------------------------------
 
-
-
 @media (min-width: 768px) {
    .subheader {
-      background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+      background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
    }
 
    .swiper-pagination {
@@ -131,7 +140,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-
    .header {
       display: none;
    }

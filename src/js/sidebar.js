@@ -1,8 +1,6 @@
 let sidebarList = document.querySelectorAll('.sidebar-menu__list-btn');
 let serviceMenuTitle = document.querySelector('.service-menu__title');
 
-console.log(serviceMenuTitle)
-console.log(sidebarList)
 
 let addSidebarBtnHandler = function (sidebarListItem) {
    sidebarListItem.addEventListener('click', function () {
